@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Calorie Calculator</title>
+    </head>
+    <body>
+        <main>
+            <h1>Calorie Calculator</h1>
+            <form>
+                <label for="body-size">Body size (in cm)</label>
+                <input type="number" id="body-size" />
+                <label for="age">Age</label>
+                <input type="number" id="age" />
+                <label for="weight">Weight (in kg)</label>
+                <input type="number" id="weight" />
+                <label for="physique">Physique</label>
+
+                <div>
+                    <input type="radio" name="physique" id="male" checked />
+                    <label for="male">male</label>
+                </div>
+                <div>
+                    <input type="radio" name="physique" id="female" /><label
+                        for="female"
+                        >female</label
+                    >
+                </div>
+
+                <select id="select-activity">
+                    work and leisure activity
+                    <option value="opt1">Sleeping only</option>
+                    <option value="opt2">Sitting or lying only</option>
+                    <option value="opt3">
+                        Exclusively sedentary job with little or no physical
+                        activity during leisure time, e.g., office work
+                    </option>
+                    <option value="opt4">
+                        Sedentary job with intermittent walking or standing,
+                        e.g., students, assembly line workers, lab technicians,
+                        drivers
+                    </option>
+                    <option value="opt5">
+                        Predominantly walking or standing activity, e.g.
+                        salespersons, waiters, craftsmen, mechanics, housewives
+                    </option>
+                    <option value="opt6">Physically demanding job</option>
+                </select>
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+            <div class="table">
+                <p></p>
+                <p>kcal</p>
+                <p>kJ</p>
+                <p>basal metabolic rate</p>
+                <p id="min-kcal">---</p>
+                <p id="max-kcal">---</p>
+                <p>total metabolic rate</p>
+                <p id="min-kj">---</p>
+                <p id="max-kj">---</p>
+            </div>
+            <div class="text">
+                <p>
+                    Das Ergebnis des Rechners sollten Sie als Orientierungswert
+                    ansegen, da es verschiedene Fehlermöglichkeiten gibt wie
+                    abweichender Grundumsatz, falsche Zeiteinschätzung etc.
+                </p>
+            </div>
+        </main>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

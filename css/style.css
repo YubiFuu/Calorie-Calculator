@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../font/OpenSans-VariableFont.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Open Sans";
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    border-radius: 10px;
+    background: linear-gradient(
+        174deg,
+        rgba(57, 156, 173, 1) 62%,
+        rgba(55, 108, 128, 1) 97%
+    );
+}
+h1 {
+    align-self: center;
+    padding: 20px;
+}
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.table {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 0 10px;
+}
+.table p {
+    grid-column: 1fr;
+    border: 1px solid grey;
+    background-color: aliceblue;
+}
+.table p:nth-child(-n + 3) {
+    background: rgb(88, 202, 203);
+}
+.text {
+    padding: 10px;
+}
