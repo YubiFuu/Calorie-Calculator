@@ -40,7 +40,7 @@ form {
 }
 .table p {
     grid-column: 1fr;
-    border: 1px solid grey;
+    border: 1px solid rgb(107, 133, 133);
     background-color: aliceblue;
 }
 .table p:nth-child(-n + 3) {
